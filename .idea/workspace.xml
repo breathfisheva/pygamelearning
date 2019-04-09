@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3b87e03-4709-4b9d-86ed-7c8e863cf735" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day2.1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,12 +14,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day2.py">
+        <entry file="file://$PROJECT_DIR$/day2.1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+            <state relative-caret-position="17">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#16#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="113">
+              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="44" />
               <folding>
                 <element signature="e#438#451#0" expanded="true" />
               </folding>
@@ -55,14 +55,15 @@
         <option value="$PROJECT_DIR$/day1.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/day2.py" />
+        <option value="$PROJECT_DIR$/day2.1.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="225" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="21" />
+    <option name="y" value="501" />
     <option name="width" value="1192" />
-    <option name="height" value="1038" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -99,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.day2">
+  <component name="RunManager" selected="Python.day2.1">
     <configuration name="day1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pygamelearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,8 +143,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="day2.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pygamelearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day2.1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day2.1" />
         <item itemvalue="Python.day2" />
         <item itemvalue="Python.day1" />
       </list>
@@ -163,11 +186,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="629" y="293" width="667" height="1038" extended-state="0" />
+    <frame x="21" y="501" width="1192" height="1044" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24960254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27209705" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -175,7 +198,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49834254" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20526893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -224,22 +247,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="113">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="44" />
           <folding>
             <element signature="e#438#451#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day2.py">
+    <entry file="file://$PROJECT_DIR$/day2.1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        <state relative-caret-position="17">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#16#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
