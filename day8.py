@@ -1,6 +1,6 @@
 '''
 遇到边界反弹
-
+就是速度取反
 '''
 background_image_filename = 'sushiplate.jpg'
 sprite_image_filename = 'fugu.png'
