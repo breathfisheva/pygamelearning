@@ -1,3 +1,8 @@
+'''
+这里有一个问题，数是不可以重复的，所以用list_result方法进行全排列，可是加减乘除是可以重复的，如果依然用list_result就会忽略了一些可能
+
+'''
+
 #列出列表的全排列
 # result = []
 def list_result(l, s='', result=[]):
@@ -8,6 +13,14 @@ def list_result(l, s='', result=[]):
             result.append(pickdata)
         list_result(rest_list, pickdata, result)
 
+    return result
+
+def list_result_duplicate(l, repeat=1):
+    pools = [l for i in range(repeat)]
+
+    result = ['']
+    for pool in pools:
+        result = [x+y for x in result for y in pool]
     return result
 
 class Node:
@@ -55,7 +68,7 @@ def cal(a, b, operator):
 def cal_tree(node):
     if node.left is None:
         return node.val
-    return cal(cal_tree(node.left), cal_tree(node.right), node.val)
+    return cal(cal_tree(node.left), cal_tree(node.right), node.val) #后序遍历
 
 def print_expression_tree(root):
     print_node(root)
@@ -69,13 +82,14 @@ def print_node(node):
     else:
         print ('(', end='')
         print_node(node.left)
-        print (node.val,end='')
+        print (node.val,end='') #终序遍历
         print_node(node.right)
         print (')',end='')
 
 def calculate(nums):
     nums_possible = list_result(nums)
-    operators_possible = list_result(['+','-','*','÷'], result=[]) #这里有一个问题，如果不设置result为空，operators_possible和  nums_possible  结果会混在一起
+    # operators_possible = list_result(['+','-','*','÷'], result=[]) #这里有一个问题，如果不设置result为空，operators_possible和  nums_possible  结果会混在一起
+    operators_possible = list_result_duplicate('+-*÷',3)
     goods_noods = []
     for nums in nums_possible:
         for op in operators_possible:
@@ -90,7 +104,7 @@ def calculate(nums):
         print_expression_tree(node)
 
 
-calculate(['1', '2', '3', '8'])
+calculate(['4', '2', '3', '1'])
 
 # if __name__ == '__main__':
 #     l = ['1', '2', '3']
