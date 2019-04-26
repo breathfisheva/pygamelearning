@@ -13,6 +13,7 @@ food_position = [160, 100]
 eatfood = False
 
 direction = 'right'
+Changedirection = direction  # 加上changedirection变量
 
 clock = pygame.time.Clock()
 
@@ -27,6 +28,7 @@ def gameOver():
     pygame.quit()
     exit()
 
+
 while True:
 
     for event in pygame.event.get():
@@ -34,13 +36,24 @@ while True:
             exit()
         elif event.type == KEYDOWN:
             if event.key == K_RIGHT:
-                direction = 'right'
+                Changedirection = 'right'
             if event.key == K_LEFT:
-                direction = 'left'
+                Changedirection = 'left'
             if event.key == K_UP:
-                direction = 'up'
+                Changedirection = 'up'
             if event.key == K_DOWN:
-                direction = 'down'
+                Changedirection = 'down'
+
+    #注意我们需要用changedirection作为下一步的方向，然后direction保留之前的方向，如果之前的方向是往上走的化，那下一步的方向就不能是往下走
+    if Changedirection == 'right' and direction!='left':
+        direction = Changedirection
+    if Changedirection == 'left' and direction!='right':
+        direction = Changedirection
+    if Changedirection == 'up' and direction!='down':
+        direction = Changedirection
+    if Changedirection == 'down' and direction!='up':
+        direction = Changedirection
+
 
     if direction == 'right':
         head[0] += 20
@@ -50,6 +63,7 @@ while True:
         head[1] -= 20
     if direction == 'down':
         head[1] += 20
+
 
     snake_segments_position.insert(0, (head[0], head[1])) #这里要传的head里面具体的值，如果直接把head传进去，会导致之前的值也变化。
 
